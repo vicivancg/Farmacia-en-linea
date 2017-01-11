@@ -1,0 +1,16 @@
+Sistema de Farmacia en Linea
+
+Objetivo: Sistema de venta de medicamentos, en el cual una farmacia puede
+ofrecer sus productos y los clientes aledaños pueden adquirirlos mediante
+el sistema web
+
+Funcionamiento. El sistema esta programado en Java, para las clases de negocio y datos,
+la interfaz esta programada en HTML con JS, JQuery y las clases que le brindan
+funcionamiento estan programadas con JSP, la base de datos es MySQL.
+Arquitectura. capas(interfaz, negocio, datos).
+
+para ejecutar el sistema se necesita tener un servidor Apache Tomcat, o en su defecto
+Glassfish, asi como la base de datos en un servidor de MySQL.
+
+En el documento anexo (proyecto farmacia_en_linea.docx) se detalla el desarrollo, asi como
+imagenes del sistema.

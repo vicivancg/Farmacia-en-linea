@@ -1,0 +1,42 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>introduce una categoria</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript">
+            function valida ()
+            {
+                if (document.getElementById("txtCategoria").value != '')
+                    {
+                        document.getElementById("frmCategoria").submit();
+                    }
+                    else
+                        {
+                            alert ("introduce una categoria");
+                        }
+            }
+        </script>
+        <link rel="stylesheet" type="text/css" href="<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>">
+        
+        <style>
+      body {
+          background-image:url('css/images/bg.jpg') ;
+       font-family: 'Merriweather Sans', sans-serif;
+  font-size: 30px;
+  text-shadow: 5px 5px 5px #aaa;
+      }
+      
+     
+    </style>
+    </head>
+    <body background="css/images/bg.jpg">
+        <form id="frmCategoria" name="frmCategoria" method="post" action="categoria.jsp">
+            <input type="text" id="txtCategoria" name="txtCategoria" placeholder="nombre de categoria"/>
+            <input type="button" id="btnModifica" name="btnModifica" value="agregar categoria" onclick="valida()"/>
+        </form>
+    </body>
+</html>

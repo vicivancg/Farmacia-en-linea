@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>nuevo administrador</title>
+<script type="text/javascript">
+function valida()
+{
+	if(document.getElementById("nombre").value == "")
+	{
+		alert("introduce Nombre");
+	}
+	else if (document.getElementById("apP").value == "")
+	{
+		alert("introduce apellido paterno");
+	}
+        else if (document.getElementById("apM").value == "")
+	{
+		alert("introduce apellido materno");
+	}
+        else if (document.getElementById("user").value == "")
+	{
+		alert("introduce nombre de usuario");
+	}
+        else if (document.getElementById("cont").value == "")
+	{
+		alert("introduce una contraseña");
+	}
+        else if (document.getElementById("cargo").value == "")
+	{
+		alert("introduce tu cargo");
+	}
+        else
+        {
+            document.getElementById("frmNuevo").submit();
+        }
+}
+</script>
+
+<link rel="stylesheet" type="text/css" href="<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>">
+    <style>
+      body {
+          
+       font-family: 'Merriweather Sans', sans-serif;
+  font-size: 30px;
+  text-shadow: 5px 5px 5px #aaa;
+      }
+      
+     
+    </style>
+</head>
+
+<body background="css/images/bg.jpg">
+    <p align="center">
+    <label for="nombre"></label>
+    Nuevo Administrador</p>
+<form id="frmNuevo" name="frmNuevo" method="post" action="nuevoAdmin.jsp" >
+    
+    <p align="center">Nombre&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="nombre" id="nombre" />
+  </p>
+  <p align="center">Apellido Paterno&nbsp;&nbsp;&nbsp;
+   <input type="text" name="apP" id="apP" />
+  </p>
+  <p align="center">
+    <label for="apP"></label>
+    Apellido Materno &nbsp;&nbsp;
+    <input type="text" name="apM" id="apM" />
+  </p>
+  <p align="center">
+    <label for="user"></label>
+    Usuario&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="user" id="user" />
+  </p>
+  <p align="center">
+    <label for="cont"></label>
+    Contraseña&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;
+    <input type="text" name="cont" id="cont" />
+  </p>
+  <p align="center">
+    <label for="cargo">Cargo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" name="cargo" id="cargo" />
+  </p>
+  <p align="center" size="15">
+    <input type="button" name="btnNusuario" id="btnNusuario" value="Registrar" onclick="valida()" />
+  </p>
+  <p>&nbsp;</p>
+    
+</form>
+</body>
+</html>
